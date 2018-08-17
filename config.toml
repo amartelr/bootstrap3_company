@@ -1,0 +1,31 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "My New Hugo Site"
+DefaultContentLanguage = "en"
+
+[languages]
+    [languages.en]
+    title = "My Company Website"
+    weight = 1
+    languageName = "English"
+
+    [languages.en.params]
+      linkedin = "https://linkedin.com/whoever"
+
+    [languages.fr]
+    title = "Mon site Web d'entreprise"
+    weight = 2
+    languageName = "Français"
+        [languages.fr.params]
+        linkedin = "https://linkedin.com/fr/whoever"
+            [languages.fr.params.navigation]
+                help = "Aide"
+    
+    [languages.es]
+    title = "Sitio web de mi empresa"
+    weight = 3
+    languageName = "Español"
+    [languages.es.params]
+      linkedin = "https://linkedin.com/fr/whoever"
+      [languages.es.params.navigation]
+        help = "Aide"        
