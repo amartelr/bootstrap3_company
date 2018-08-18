@@ -1,5 +1,7 @@
 {{- if and .Site.IsMultiLingual (not .Site.Params.DisableLanguageSwitchingButton)}}
-<select id="select-language" onchange="location = this.value;">
+<form class="form-inline my-2 my-lg-0"></form>
+
+<select class="custom-select my-1 mr-sm-2" id="select-language" onchange="location = this.value;">
 	{{ $siteLanguages := .Site.Languages}}
 	{{ $pageLang := .Page.Lang}}
 	{{ range .Page.AllTranslations }}
@@ -15,4 +17,6 @@
 	  {{ end }}
 	{{ end }}
 </select>
+</form>
 {{- end }}
+
